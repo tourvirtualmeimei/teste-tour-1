@@ -2,7 +2,7 @@
 export const sceneConfigurations = {
     // Cena 1: Frente do portão
     1: {
-        image: '/static/images/frente_portao.jpeg', // Caminho da imagem equiretangular ou cilíndrica
+        image: 'images/frente_portao.jpeg', // Caminho da imagem equiretangular ou cilíndrica
         projection: 'spherical', // Tipo de projeção (esférica)
         pois: [ // Pontos de interesse da cena
             {
@@ -17,7 +17,7 @@ export const sceneConfigurations = {
 
     // Cena 2: Frente da recepção
     2: {
-        image: '/static/images/frente_recepcao.jpeg',
+        image: 'images/frente_recepcao.jpeg',
         projection: 'spherical',
         pois: [
             { type: 'recepcao', position: new THREE.Vector3(-426, 144, 215), action: () => switchScene(6) },
@@ -32,7 +32,7 @@ export const sceneConfigurations = {
 
     // Cena 3: Curva da rua
     3: {
-        image: '/static/images/curva_rua.jpeg',
+        image: 'images/curva_rua.jpeg',
         projection: 'cylindrical', // Aqui usamos projeção cilíndrica
         pois: [
             { type: 'navigation', position: new THREE.Vector3(93, -281, -490), action: () => switchScene(2) },
@@ -44,7 +44,7 @@ export const sceneConfigurations = {
 
     // Cena 4: Topo da rua
     4: {
-        image: '/static/images/topo rua.jpeg',
+        image: 'images/topo rua.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(-332, -51, -373), action: () => switchScene(3) },
@@ -54,7 +54,7 @@ export const sceneConfigurations = {
 
     // Cena 5: Hall do refeitório e quartos
     5: {
-        image: '/static/images/hall_refeitorio_quartos.jpeg',
+        image: 'images/hall_refeitorio_quartos.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(-77, -65, -493), action: () => switchScene(4) },
@@ -66,7 +66,7 @@ export const sceneConfigurations = {
 
     // Cena 6: Recepção
     6: {
-        image: '/static/images/recepcao.jpeg',
+        image: 'images/recepcao.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(89, 22, -491), action: () => switchScene(2) },
@@ -76,7 +76,7 @@ export const sceneConfigurations = {
 
     // Cena 7: Cinema
     7: {
-        image: '/static/images/Cinema.jpeg',
+        image: 'images/Cinema.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(-374, 20, -331), action: () => switchScene(2) }
@@ -85,7 +85,7 @@ export const sceneConfigurations = {
 
     // Cena 8: Lavanderia
     8: {
-        image: '/static/images/lavanderia.jpeg',
+        image: 'images/lavanderia.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(-497, 51, -53), action: () => switchScene(2) },
@@ -95,7 +95,7 @@ export const sceneConfigurations = {
 
     // Cena 9: Espaço de eventos
     9: {
-        image: '/static/images/eventos.jpeg',
+        image: 'images/eventos.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(-486, 117, 115), action: () => switchScene(2) },
@@ -105,7 +105,7 @@ export const sceneConfigurations = {
 
     // Cena 10: Playground e bosque
     10: {
-        image: '/static/images/playground_bosque.jpeg',
+        image: 'images/playground_bosque.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(419, -246, -270), action: () => switchScene(2) },
@@ -115,7 +115,7 @@ export const sceneConfigurations = {
 
     // Cena 11: Quarto das meninas
     11: {
-        image: '/static/images/quarto meninas.jpeg',
+        image: 'images/quarto meninas.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(-487, 76, -110), action: () => switchScene(5) }
@@ -124,7 +124,7 @@ export const sceneConfigurations = {
 
     // Cena 12: Playground bebê
     12: {
-        image: '/static/images/PLAYGROUND BEBE.jpeg',
+        image: 'images/PLAYGROUND BEBE.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(-375, -14, -330), action: () => switchScene(5) },
@@ -134,7 +134,7 @@ export const sceneConfigurations = {
 
     // Cena 13: Berçário
     13: {
-        image: '/static/images/bercario.jpeg',
+        image: 'images/bercario.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'playbebe', position: new THREE.Vector3(-407, 47, 288), action: () => switchScene(12) }
@@ -143,7 +143,7 @@ export const sceneConfigurations = {
 
     // Cena 14: Cozinha
     14: {
-        image: '/static/images/cozinha.jpeg',
+        image: 'images/cozinha.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'refeitorio', position: new THREE.Vector3(-359, 15, 346), action: () => switchScene(15) }
@@ -152,7 +152,7 @@ export const sceneConfigurations = {
 
     // Cena 15: Refeitório
     15: {
-        image: '/static/images/refeitorio.jpeg',
+        image: 'images/refeitorio.jpeg',
         projection: 'cylindrical',
         pois: [
             { type: 'cozinha', position: new THREE.Vector3(461, 14, -191), action: () => switchScene(14) },
@@ -162,7 +162,7 @@ export const sceneConfigurations = {
 
     // Cena 16 está comentada por enquanto
     16: {
-        image: '/static/images/quarto_meninos.jpg',
+        image: 'images/quarto_meninos.jpg',
         projection: 'cylindrical',
         pois: [
             { type: 'navigation', position: new THREE.Vector3(336, 7, 369), action: () => switchScene(3) }

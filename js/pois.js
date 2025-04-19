@@ -9,7 +9,7 @@ export function createPOIMesh(poiConfig, camera) {
     if (poiConfig.type === 'navigation') {
         // Se for um POI de navegação, usa um ícone de seta
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/arrow.png'), // Ícone da seta
+            map: textureLoader.load('images/icon/arrow.png'), // Ícone da seta
             transparent: true,           // Permite transparência
             alphaTest: 0.5,              // Define o limiar de transparência
             side: THREE.DoubleSide       // Renderiza dos dois lados do plano
@@ -17,7 +17,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'video') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/play_icon.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/play_icon.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -25,7 +25,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'info') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/play_icon.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/play_icon.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -33,7 +33,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'recepcao') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/recepcao.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/recepcao.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -41,7 +41,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'cinema') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/cinema.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/cinema.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -49,7 +49,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'lavanderia') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/lavanderia.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/lavanderia.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -57,7 +57,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'menino') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/menino.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/menino.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -66,7 +66,7 @@ export function createPOIMesh(poiConfig, camera) {
     else if (poiConfig.type === 'menina') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/menina.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/menina.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -74,7 +74,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'playground') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/playground.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/playground.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -82,7 +82,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'bercario') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/bercario.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/bercario.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -90,7 +90,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'refeitorio') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/refeitorio.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/refeitorio.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -98,7 +98,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'cozinha') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/cozinha.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/cozinha.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -106,7 +106,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'eventos') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/eventos.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/eventos.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide
@@ -114,7 +114,7 @@ export function createPOIMesh(poiConfig, camera) {
     } else if (poiConfig.type === 'playbebe') {
         // Se for um POI de vídeo, usa um ícone de play
         material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('/static/images/icon/playbebe.png'), // Ícone de vídeo
+            map: textureLoader.load('images/icon/playbebe.png'), // Ícone de vídeo
             transparent: true,
             alphaTest: 0.5,
             side: THREE.DoubleSide

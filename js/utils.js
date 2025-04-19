@@ -35,7 +35,7 @@ export function loadNewSphere(imagePath, projection, scene, camera, textureLoade
 
         // Adiciona fade visual (topo e base) se for cilíndrica
         if (projection === 'cylindrical') {
-            const fadeTexture = textureLoader.load('/static/images/fade_gradient.png');
+            const fadeTexture = textureLoader.load('images/fade_gradient.png');
             
             const fadeMaterial = new THREE.MeshBasicMaterial({
                 map: fadeTexture,
